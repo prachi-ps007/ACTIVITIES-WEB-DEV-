@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FERRIS WHEEL</title>
+    <style>
+        .wheel{
+                border: 2px solid black;
+                border-radius: 50%;
+                margin-left: 500px;
+                margin-top: 200px;
+                position: absolute;
+                height: 55vh;
+                width: 55vw;
+                max-width: 500px;
+                max-height: 500px;
+                animation: Wheel 10s linear infinite;
+        }
+
+        .line{
+                transform-origin: 0% 0%;
+                background-color: black;
+                width: 50%;
+                height: 2px;
+                top:50%;
+                left:50%;
+                position: absolute;
+        }
+
+        .line:nth-of-type(2) {
+                transform: rotate(60deg);
+        }
+
+        .line:nth-of-type(3){
+                transform: rotate(120deg);
+        }
+
+        .line:nth-of-type(4){
+                transform: rotate(180deg);
+        }
+
+        .line:nth-of-type(5){
+                transform: rotate(240deg);
+        }
+
+        .line.line:nth-of-type(6){
+                transform: rotate(300deg);
+        }
+
+        .cabin{
+                transform-origin: 50% 0%;
+                width:100px;
+                height:100px;
+                background-color: purple;
+                border: 2px solid black;
+                position: absolute;
+                animation: cabins 10s linear infinite;
+        }
+
+        .cabin:nth-of-type(1){
+                right:  -8.5%;
+                top: 50%;
+        }
+
+        .cabin:nth-of-type(2){
+                right: 17%;
+                top: 93.5%;
+
+        }
+
+        .cabin:nth-of-type(3){
+                right: 67%;
+                top: 93.5%;
+
+        }
+
+        .cabin:nth-of-type(4){
+                left: -8.5%;
+                top: 50%;
+        }
+
+        .cabin:nth-of-type(5){
+                left: 17%;
+                top: 7%;
+        }
+
+        .cabin:nth-of-type(6){
+                right: 17%;
+                top: 7%;
+        }
+
+        @keyframes Wheel{
+                0%{
+                    transform: rotate(0deg);
+                    
+                }
+
+                100%{
+                    transform: rotate(360deg);
+                  
+                }
+        }
+
+        @keyframes cabins{
+            0%{
+                transform: rotate(0deg);
+                background-color: rgb(52, 13, 88);
+            }
+
+            50%{
+                background-color: rgb(255, 124, 10);
+            }
+
+            100%{
+                transform: rotate(-360deg);
+                background-color: rgb(194, 0, 0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wheel">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+        <div class="cabin"></div>
+        <div class="cabin"></div>
+        <div class="cabin"></div>
+        <div class="cabin"></div>
+        <div class="cabin"></div>
+        <div class="cabin"></div>
+    </div>
+</body>
+</html>
