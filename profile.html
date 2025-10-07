@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            background:rgb(199, 192, 192);
+        }
+        
+
+        
+        img{
+                    width:180px;
+                    height:180px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    font-size: 1.5rem;
+                    font-weight: bold;
+        }
+
+       
+
+        .extras{
+            display:flex;
+            gap: 30px;
+            
+        }
+        
+        button{
+            background-color: rgb(19, 74, 224);
+            color:white;
+            height:40px;
+            width:180px;
+            border-radius: 10px;
+            
+
+        }
+
+        .card{
+           
+            width: 800px;
+            background:white;
+            border-radius: 16px;
+            box-shadow: inset;
+            display:flex;
+            margin-top: 250px;
+            margin-left:340px;
+            border:2px solid black;
+            padding:10px;
+
+        }
+
+        .info{
+            padding:20px;
+
+        }
+
+        @media(max-width:640px){
+            .card{
+                display: flex;
+                flex-direction:column;
+                width: 70vw;
+                margin-top:170px;
+                margin-left:20px;
+            }
+
+            img{
+                width:100px;
+                height:100px;
+                align-items: center;
+                
+
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="card">
+        <div class="one">
+    <img src="https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_640.png"><br><pre> <h1>PRACHI SHRIVASTAV</h1></pre>
+    </div>
+    <div class="info">
+    <p>Currently learning Java, Python, and web development. I enjoy working on projects that challenge me to think creatively and improve my skills.</p>
+     <div class="extras">
+
+    <button id="phone"> CONTACT </button> <button id="portfolio">PORTFOLIO </button>
+    </div>
+    </div>
+    <br><br>
+   
+    </div>
+    </div>
+    
+    
+</body>
+</html>
